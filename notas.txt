@@ -1,0 +1,11 @@
+Engine
+	- Toda a programação.
+
+Gear
+	- Todo o conteúdo
+
+Settings
+	- Todas as configurações
+
+View
+	- Template e Estrutura

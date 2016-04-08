@@ -1,0 +1,5 @@
+SRC
+	- informações complementares externas, ex.: CSS, IMG, JS...
+
+Includes
+	- estruturas externas, implementadas com include.

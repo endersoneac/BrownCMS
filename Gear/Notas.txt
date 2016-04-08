@@ -1,0 +1,5 @@
+Stack
+	- Programação para cada tipo de necessidade, assim sendo fácil personalização.
+
+Stack-> Unit
+	- Informações unitárias de cada Stack(componente), semelhante a row do DB.

@@ -1,0 +1,8 @@
+Controller
+	- Camada de negócios, onde todos os processos são feitos.
+
+Model
+	- Camada de modelagem.
+
+Persistent
+	- Camada de persistência, onde o contato com o BD é feito.
