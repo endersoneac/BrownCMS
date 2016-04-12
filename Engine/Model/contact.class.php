@@ -1,4 +1,5 @@
 <?php
+namespace Model{
 	class Contact{
 		
 		private $idcontact = null;
@@ -77,4 +78,5 @@
 		public function __destruct(){}
 		
 	}
+}
 ?>

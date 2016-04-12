@@ -1,4 +1,5 @@
 <?php
+namespace Model{
 	class User{
 		
 		private $iduser = NULL;
@@ -93,12 +94,49 @@
 		// Constructor / Destructor
 		// ------------------
 		
+		function __construct(){
+			//Verifica o número de parâmetros no construtor, e executa função com o número de parâmetros correto.
+			$args = func_get_args();
+			$numberOfArgs = func_num_args();
+			if (method_exists($this,$funtion='__construct'.$numberOfArgs)) {
+				call_user_func_array(array($this,$funtion),$args);
+			}
+		}
+		
+		function __construct1($id){
+			$this->setIduser($id);
+		}
+		
+		function __construct2($user,$pass){
+			$this->setUsername($user);
+			$this->setPassword($pass);
+		}
+		
+		function __construct6($user,$pass,$firstname,$lastname,$mail,$level){
+			$this->setUsername($user);
+			$this->setPassword($pass);
+			$this->setFirstname($firstname);
+			$this->setLastname($lastname);
+			$this->setEmail($mail);
+			$this->setLevel($level);
+		}
+		
+		function __construct8($id,$user,$pass,$firstname,$lastname,$mail,$level,$enabed){
+			$this->setIduser($id);
+			$this->setUsername($user);
+			$this->setPassword($pass);
+			$this->setFirstname($firstname);
+			$this->setLastname($lastname);
+			$this->setEmail($mail);
+			$this->setLevel($level);
+			$this->setEnabled($enabed);
+		}
 		
 		// Empty Constructor
-		public function __construct(){}
-		
+		public function __construct0(){}
 		// Destructor
 		public function __destruct(){}
 		
 	}
+}
 ?>

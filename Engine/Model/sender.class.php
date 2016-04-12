@@ -1,4 +1,5 @@
 <?php
+namespace Model{
 	class Sender{
 		
 		private $idsender = NULL;
@@ -70,4 +71,5 @@
 		public function __destruct(){}
 		
 	}
+}
 ?>
