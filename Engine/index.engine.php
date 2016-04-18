@@ -1,6 +1,6 @@
 <?php
 
-namespace engine;
+namespace Engine;
 
 	if (!defined('HOME')) define("HOME", __DIR__."/");
 
